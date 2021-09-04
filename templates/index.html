@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clickbait analysis</title>
+</head>
+<body>
+    <h1>
+		CLICKBAIT HEADLINE CHECKER
+    </h1>
+
+		<form action="/" method="POST">
+		    <textarea name="message" style="outline: none;" placeholder="type your headline..." rows="6" cols="50" required></textarea>
+            <br/>
+            <br/>
+            <input type="submit" value="Check">
+        </form>
+
+    {% if my_nb_prediction == 1%}
+			<h2>Click Bait</h2>
+	{% elif my_nb_prediction == 0%}
+			<h2>Not Click Bait</h2>
+	{% endif %}
+
+</body>
+</html>
